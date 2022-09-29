@@ -1,0 +1,50 @@
+$primaryColor: #4ad7d1;
+$secondaryColor: #fe4a49;
+$tertiaryColor: #001730;
+
+@mixin form-style {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+@mixin form-banner {
+  width: 50%;
+  height: 100%;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+@mixin button-style {
+  border-radius: 20px;
+  border: 1px solid #ff4b2b;
+  // background-color: #ff4b2b;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  background-color: #001730;
+  border: 1px solid #001730;
+
+  background-color: transparent;
+  border-color: #ffffff;
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+@mixin border-style {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+  border-radius: 0.3rem;
+}

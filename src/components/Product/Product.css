@@ -1,0 +1,37 @@
+.product {
+  text-align: center;
+}
+
+.form {
+  display: grid;
+  gap: 1rem;
+  margin-top: 0rem;
+  width: 60%;
+  margin: auto;
+  padding-bottom: 2rem;
+}
+
+.form > div > label {
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+}
+
+.form__div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+input,
+textarea {
+  margin-left: 1rem;
+}
+
+.imageDiv {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}

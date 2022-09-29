@@ -1,0 +1,172 @@
+@import '../../scss/stylesheet.scss';
+
+.cartCont {
+  padding: 2rem;
+  margin-top: 0px;
+}
+
+.cartheader {
+  margin-top: -2rem;
+}
+
+.cartDel {
+  width: 80%;
+  display: flex;
+  margin-left: 10%;
+  flex-direction: row;
+}
+
+.cartDel__cart {
+  width: 70%;
+  @include border-style;
+  padding: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.cartDel__del {
+  max-height: inherit;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+  margin-left: 1rem;
+  width: 30%;
+  @include border-style;
+  padding: 1rem;
+  height: 80vh;
+}
+
+.cartDel__del--p {
+  color: gray;
+  margin-top: 0em;
+}
+
+.cartDel__del--btn {
+  color: black;
+}
+
+.hr {
+  border-top: 1px dashed gray;
+}
+.promodiv {
+  display: flex;
+}
+
+.promodiv > .promoText {
+  flex: 1;
+  margin-left: 0rem;
+}
+
+.promodiv > .applyBtn {
+  background-color: white;
+  border: 1px solid grey;
+}
+
+.promodiv--dis {
+  color: gray;
+  margin-top: 0em;
+}
+
+.subtotal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navlink {
+  text-decoration: none;
+}
+.addicon {
+  vertical-align: middle;
+  cursor: pointer;
+}
+.emptyCart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.emptyCart > p {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 600px) {
+  .cartCont {
+    padding: 2rem;
+    margin-top: 50px;
+  }
+
+  .cartheader {
+    margin-top: -2rem;
+  }
+
+  .cartDel {
+    width: 100%;
+    display: flex;
+    margin-left: 0%;
+    flex-direction: column;
+  }
+
+  .cartDel__cart {
+    width: 100%;
+    @include border-style;
+    padding: 0rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .cartDel__del {
+    position: static;
+    top: 20px;
+    margin-left: 0rem;
+    margin-top: 1rem;
+    width: 90%;
+    @include border-style;
+    padding: 1rem;
+    height: 80vh;
+  }
+
+  .cartDel__del--p {
+    color: gray;
+    margin-top: 0.3em;
+  }
+
+  .cartDel__del--btn {
+    color: black;
+  }
+
+  .hr {
+    border-top: 1px dashed gray;
+  }
+  .promodiv {
+    display: flex;
+  }
+
+  .promodiv > .promoText {
+    flex: 1;
+    margin-left: 0rem;
+  }
+
+  .promodiv > .applyBtn {
+    background-color: white;
+    border: 1px solid grey;
+  }
+
+  .promodiv--dis {
+    color: gray;
+    margin-top: 0em;
+  }
+
+  .subtotal {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navlink {
+    text-decoration: none;
+  }
+  .addicon {
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  .emptyCart > p {
+    margin-bottom: 2rem;
+  }
+}

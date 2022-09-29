@@ -1,0 +1,89 @@
+@import '../../scss/stylesheet.scss';
+
+.register {
+  text-align: center;
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.formReg {
+  @include form-style;
+  width: 50%;
+}
+
+.leftDiv {
+  // background: -webkit-linear-gradient(to right, #4ad7d1, #4ad7d1);
+  // background: linear-gradient(to right, #4ad7d1, #4ad7d1);
+  background-color: $primaryColor;
+  display: flex;
+  width: 50%;
+  @include form-banner;
+}
+
+.leftDiv > h1 {
+  font-weight: bold;
+  margin: 1;
+}
+
+.leftDiv > p {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 20px 0 30px;
+}
+
+button {
+  border-radius: 20px;
+  border: 1px solid #ff4b2b;
+  background-color: #ff4b2b;
+  /* color: #ffffff; */
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+
+button.regBtn {
+  background-color: #001730;
+  border: 1px solid #001730;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button:focus {
+  outline: none;
+}
+
+button.ghost {
+  background-color: transparent;
+  /* border-color: #ffffff; */
+}
+
+@media (max-width: 600px) {
+  .register {
+    text-align: center;
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formReg {
+    @include form-style;
+    width: 100%;
+  }
+
+  .leftDiv {
+    // background: -webkit-linear-gradient(to right, #4ad7d1, #4ad7d1);
+    // background: linear-gradient(to right, #4ad7d1, #4ad7d1);
+    background-color: $primaryColor;
+    @include form-banner;
+    display: none;
+  }
+}

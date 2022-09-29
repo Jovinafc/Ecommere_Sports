@@ -1,0 +1,88 @@
+@import '../../scss/stylesheet.scss';
+
+.login {
+  text-align: center;
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.formLog {
+  @include form-style;
+  width: 50%;
+}
+
+.rightDiv {
+  display: flex;
+  background-color: $secondaryColor;
+  @include form-banner;
+}
+
+.rightDiv > h1 {
+  font-weight: bold;
+  margin: 1;
+}
+
+.rightDiv > p {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 20px 0 30px;
+}
+
+button {
+  border-radius: 20px;
+  border: 1px solid #ff4b2b;
+  // background-color: #ff4b2b;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+
+button.loginBtn {
+  background-color: $tertiaryColor;
+  border: 1px solid $tertiaryColor;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button:focus {
+  outline: none;
+}
+
+button.ghost {
+  background-color: transparent;
+  border-color: #ffffff;
+}
+
+button {
+  @include button-style;
+}
+
+@media (max-width: 600px) {
+  .login {
+    text-align: center;
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formLog {
+    @include form-style;
+    width: 100%;
+  }
+
+  .rightDiv {
+    display: none;
+    background-color: $secondaryColor;
+    @include form-banner;
+  }
+}

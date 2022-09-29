@@ -1,0 +1,36 @@
+.home__cont {
+  display: grid;
+  margin: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.home__loader {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 80px);
+  width: 100%;
+  text-align: center;
+}
+
+.home__loader-div > p {
+  color: black;
+}
+
+.home__loader-div {
+  width: 50%;
+  margin: auto;
+}
+
+@media (max-width: 600px) {
+  .home__cont {
+    display: grid;
+    margin: 1rem;
+    margin-top: 80px;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+}

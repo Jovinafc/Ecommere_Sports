@@ -1,0 +1,140 @@
+header {
+  height: 50px;
+  background-color: #001730;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+
+  /* position: sticky;
+  top: 0px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms; */
+}
+
+.h22 {
+  color: white;
+  margin-left: 2rem;
+}
+
+h5 {
+  color: white;
+  margin: 0 1rem 0 1rem;
+}
+
+.header__menu {
+  display: flex;
+  margin-left: auto;
+  padding-right: 2rem;
+  text-align: center;
+  align-items: center;
+}
+
+.navlink {
+  text-decoration: none;
+}
+
+.logout {
+  font-size: smaller;
+  color: white;
+}
+
+.round {
+  border: 1px solid white;
+  padding: 0.2rem;
+  border-radius: 20%;
+}
+
+.header__loggedin {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header__greet {
+  display: block;
+}
+
+.header__item {
+  display: flex;
+  margin: 0.5rem;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header__item > p {
+  margin-left: 0.1rem;
+}
+
+/* #4AD7D1
+#FE4A49 */
+
+@media (max-width: 600px) {
+  header {
+    height: 50px;
+    background-color: #001730;
+    display: flex;
+    align-items: center;
+    padding-left: 0.1rem;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 10;
+  }
+
+  .h22 {
+    color: white;
+    margin-left: 2rem;
+  }
+
+  h5 {
+    color: white;
+    margin: 0 1rem 0 1rem;
+  }
+
+  .header__menu {
+    display: flex;
+    margin-left: auto;
+    padding-right: 0.5rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  .navlink {
+    text-decoration: none;
+  }
+
+  .logout {
+    font-size: x-small;
+    color: white;
+  }
+
+  .round {
+    border: 1px solid white;
+    padding: 0.2rem;
+    border-radius: 20%;
+  }
+
+  .header__loggedin {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 1rem;
+  }
+
+  .header__greet {
+    display: none;
+  }
+
+  .header__item {
+    display: flex;
+    margin: 0.5rem;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .header__item > p {
+    margin-left: 0.1rem;
+  }
+}

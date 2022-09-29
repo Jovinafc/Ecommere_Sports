@@ -1,0 +1,7 @@
+.success {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: green;
+  padding-top: 5rem;
+}

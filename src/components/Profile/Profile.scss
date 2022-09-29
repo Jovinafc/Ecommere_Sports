@@ -1,0 +1,62 @@
+@import '../../scss/stylesheet.scss';
+
+.profileCont {
+  @include border-style;
+  margin-left: 10%;
+  width: 80%;
+  margin-top: 2rem;
+  padding: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.profileCont__p {
+  color: gray;
+  margin-top: 0em;
+}
+
+.profile__form {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.profile__form-img {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid gray;
+}
+
+.profile__form-img > img {
+  margin: 1rem 2rem 1rem 1rem;
+}
+
+.image_input {
+  margin: 1rem 2rem 1rem 1rem;
+}
+
+.profile__formCont {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: space-around;
+  //   display: grid;
+  //   margin: 1rem 2rem 1rem 1rem;
+  //   grid-area: 'age phone';
+  //   grid-template-columns: 1fr 1fr;
+}
+
+.profile__formCont-one {
+  display: flex;
+
+  justify-content: space-around;
+}
+
+.profile__formCont-two {
+  display: flex;
+
+  justify-content: space-around;
+}
+
+.profile__formCont-four {
+  display: flex;
+  justify-content: center;
+}

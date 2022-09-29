@@ -1,0 +1,21 @@
+@import '../../scss/stylesheet.scss';
+
+.orderCont {
+  @include border-style;
+  margin-left: 10%;
+  width: 80%;
+  margin-top: 2rem;
+  padding: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.orderCont__p {
+  color: gray;
+  margin-top: 0em;
+}
+
+.emptyOrders {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
